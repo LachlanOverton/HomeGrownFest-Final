@@ -1,0 +1,7 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item android:drawable="@drawable/cat1_appear1" android:duration="100" />
+    <item android:drawable="@drawable/cat1_appear2" android:duration="100" />
+    <item android:drawable="@drawable/cat1_appear3" android:duration="100" />
+    <item android:drawable="@drawable/cat1_visible" android:duration="100" />
+</animation-list>

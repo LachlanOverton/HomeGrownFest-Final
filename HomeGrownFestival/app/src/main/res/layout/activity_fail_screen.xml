@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.prototypes.stu.whack_a_gnome.FailScreen"
+    android:background="@drawable/gnomewhack_bg1"
+    android:id="@+id/layout_gnomewhack_failscreen">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:paddingTop="125dp">
+    <TextView
+        android:text="You lost all your lives!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView2"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Your Score"
+        android:id="@+id/textView"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/failscreen_score_text"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_games_gnomewhack_buttons">
+
+            <Button
+                android:background="@drawable/btn_gnomewhack_tryagain"
+                android:layout_height="30dp"
+                android:layout_width="150dp"
+                android:id="@+id/btn_games_gnomewhack_fail_restart"
+                android:layout_below="@+id/failscreen_score_text"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="30dp" />
+            <Button
+                android:background="@drawable/btn_gnomewhack_exit"
+                android:layout_height="30dp"
+                android:layout_width="150dp"
+                android:id="@+id/btn_games_gnomewhack_fail_exit"
+                android:layout_below="@+id/btn_games_gnomewhack_fail_restart"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </LinearLayout>
+
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top 5 High Scores"
+            android:textStyle="bold"
+            android:textAppearance="?android:textAppearanceLarge"/>
+
+        <TextView
+            android:paddingTop="10dp"
+            android:id="@+id/games_gnomewhack_highscore1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High Score 1"
+            android:textStyle="bold"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+        <TextView
+            android:paddingTop="10dp"
+            android:id="@+id/games_gnomewhack_highscore2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High Score 2"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+        <TextView
+            android:paddingTop="10dp"
+            android:id="@+id/games_gnomewhack_highscore3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High Score 3"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+        <TextView
+            android:paddingTop="10dp"
+            android:id="@+id/games_gnomewhack_highscore4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High Score 4"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+        <TextView
+            android:paddingTop="10dp"
+            android:id="@+id/games_gnomewhack_highscore5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High Score 5"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+    </LinearLayout>
+</RelativeLayout>

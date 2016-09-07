@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#F6883C">
+
+
+    <FrameLayout
+        android:id="@+id/mainfragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:layout="@layout/activity_menu"
+        android:paddingBottom="70dp">
+
+        </FrameLayout>
+
+
+    <!--
+    <fragment
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:name="com.prototypes.stu.homegrown.MenuFragment"
+        android:id="@+id/mainfragment"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        tools:layout="@layout/activity_menu"/>
+        -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/btn_games_gnomewhack"
+                android:onClick="EventsListClick"
+                android:background="@drawable/btn_nav_events"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/btn_nav_comp"
+                android:onClick="CompetitionsClick"
+                android:background="@drawable/btn_nav_competitions"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/btn_games_seeddrop"
+                android:onClick="GamesCompetitionsClick"
+                android:background="@drawable/btn_nav_games"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/btn_comp_colourgnome"
+                android:onClick="EventMapClick"
+                android:background="@drawable/btn_nav_maps"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/btn_comp_shakewin"
+                android:onClick="ContactUsClick"
+                android:background="@drawable/btn_nav_contact"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

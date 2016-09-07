@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/layout_event_list">
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:paddingLeft="5dp">
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:id="@+id/eventImage"
+        android:background="@drawable/event_image_1"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/eventName"
+                        android:text="Name"
+                        android:textColor="#ffff6c00"
+                        android:textStyle="bold"
+                        android:textSize="15dp" />
+                </TableRow>
+            </TableLayout>
+    <TableRow>
+            <TextView
+                android:id="@+id/eventStartDate"
+                android:text="Start Date"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+        <TextView
+            android:text=" To "
+            android:textSize="14dp"
+            android:textStyle="bold" />
+            <TextView
+            android:id="@+id/eventEndDate"
+            android:text="End Date"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+    </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow>
+        <TextView
+            android:id="@+id/eventVenue"
+            android:text="Venue"
+            android:textStyle="bold" />
+        </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:id="@+id/eventSuburb"
+                android:text="Suburb"
+                android:textStyle="bold"/>
+            <TextView
+                android:text=", "/>
+            <TextView
+                android:id="@+id/eventPostcode"
+                android:text="PostCode"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/img_eventdetail_favourite"></Button>
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/img_eventlist_phone"></Button>
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/img_eventlist_booking"></Button>
+            </TableRow>
+    </TableLayout>
+    <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eventShortDesc"
+                    android:text="ShortDescription"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg2"
+    android:paddingTop="20dp"
+    android:paddingLeft="22dp"
+    android:paddingRight="22dp"
+    android:paddingBottom="20dp"
+    android:id="@+id/layout_event_detail">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp">
+<TableLayout android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/event_detail_top_btn_row">
+    <TableRow android:gravity="center"
+        android:layout_width="wrap_content">
+        <Button
+            android:id="@+id/btn_detail_favorites"
+            android:background="@drawable/btn_my_favorites"
+            android:layout_height="30dp"
+            android:layout_width="150dp"
+            android:onClick="EventFavoriteClick"></Button>
+        <Button
+            android:id="@+id/btn_detail_calendar"
+            android:background="@drawable/btn_calendar"
+            android:layout_height="30dp"
+            android:layout_width="150dp"
+            android:onClick="EventCaldendarClick"></Button>
+    </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/event_detail_imagerow"
+        android:layout_below="@id/event_detail_top_btn_row">
+    </TableLayout>
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/event_detail_titlerow"
+        android:layout_below="@id/event_detail_imagerow">
+        <TableRow android:gravity="center">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="EventName"
+                android:id="@+id/eventDetailName"
+                android:textColor="#ffff9500"
+                android:textStyle="bold|italic"
+                android:textSize="17dp"
+                android:paddingLeft="10dp" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/event_detail_feerow"
+        android:layout_below="@id/event_detail_titlerow">
+        <TableRow android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Fees"
+                android:id="@+id/eventDetailFees"
+                android:textStyle="bold|italic"
+                android:textColor="#ff00811d"
+                android:paddingLeft="10dp" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/event_detail_longdesc_row"
+        android:layout_below="@id/event_detail_feerow">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Long Description"
+            android:id="@+id/eventDetailLongDesc"
+            android:layout_below="@+id/eventDetailEndTime"
+            android:layout_alignLeft="@+id/eventDetailFees"
+            android:layout_alignStart="@+id/eventDetailFees"
+            android:paddingLeft="10dp" />
+        </TableLayout>
+        <TableLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/event_detail_longdesc_row"
+            android:id="@+id/event_detail_daterow">
+        <TableRow>
+           <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Start Date"
+                android:id="@+id/eventDetailStartDate"
+                android:textStyle="italic"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="End Date"
+                android:id="@+id/eventDetailEndDate"
+                android:textStyle="italic" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/event_detail_timerow"
+        android:layout_below="@id/event_detail_daterow">
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Start Time - "
+                android:id="@+id/eventDetailStartTime"
+                android:textStyle="italic"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="End Time"
+                android:id="@+id/eventDetailEndTime"
+                android:textStyle="italic" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/event_detail_addressrow"
+        android:layout_below="@id/event_detail_timerow">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Address"
+            android:id="@+id/eventDetailAddress"
+            android:textStyle="bold"
+            android:paddingLeft="10dp" />
+    </TableLayout>
+    <TableLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/event_detail_suburbrow"
+        android:layout_below="@id/event_detail_addressrow">
+        <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Suburb,"
+            android:id="@+id/eventDetailSuburb"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Postcode"
+            android:id="@+id/eventDetailPostcode"/>
+        </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/event_detail_phonerow"
+            android:layout_below="@id/event_detail_suburbrow">
+        <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Phone"
+            android:id="@+id/eventDetailPhone"
+            android:paddingLeft="10dp" />
+            </TableRow>
+            </TableLayout>
+
+    <TableLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/event_detail_buttonrow"
+        android:layout_below="@id/event_detail_phonerow">
+    <TableRow android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/btnBookingCall"
+            android:layout_height="70dp"
+            android:layout_width="70dp"
+            android:layout_below="@+id/titleBookingText"
+            android:background="@drawable/btn_detail_call"
+            />
+        <Button
+            android:id="@+id/btnBookingEmail"
+            android:layout_height="70dp"
+            android:layout_width="70dp"
+            android:background="@drawable/btn_detail_email"
+            android:layout_below="@+id/titleBookingText"
+            android:layout_toRightOf="@+id/btnBookingCall"
+            android:paddingLeft="10dp"
+            />
+        <Button
+            android:id="@+id/btn_event_detail_addfavorite"
+            android:layout_height="70dp"
+            android:layout_width="70dp"
+            android:background="@drawable/btn_detail_favorite"
+            android:layout_below="@+id/titleBookingText"
+            android:layout_toRightOf="@id/btnBookingEmail"
+            android:paddingLeft="10dp"
+            />
+        <Button
+            android:id="@+id/btn_event_detail_map"
+            android:layout_height="70dp"
+            android:layout_width="70dp"
+            android:background="@drawable/btn_detail_map"
+            android:layout_below="@+id/titleBookingText"
+            android:layout_toRightOf="@+id/btn_event_detail_addfavorite"
+            android:paddingLeft="10dp"
+            />
+        </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_below="@id/event_detail_buttonrow">
+            <TableRow android:gravity="center_horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mapImage"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="10dp" />
+            </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+    </ScrollView>

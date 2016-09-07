@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:id="@+id/gamewhack_gamescreen_background"
+    android:layout_alignParentBottom="true">
+    <TableLayout
+        android:id="@+id/tablerow1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+    <TableRow>
+        <TextView
+            android:text="SCORE"
+            android:layout_width="100dp"
+            android:textStyle="bold"
+            android:textColor="#ffc0f6ff"
+            android:textSize="22dp" />
+        <TextView
+            android:text="0"
+            android:id="@+id/scoretext"
+            android:layout_width="100dp"
+            android:textStyle="bold"
+            android:textColor="#ffc0f6ff"
+            android:textSize="22dp" />
+        <TextView
+            android:text="LIVES"
+            android:layout_width="100dp"
+            android:textStyle="bold"
+            android:textColor="#ffc0f6ff"
+            android:textSize="22dp"/>
+        <TextView
+            android:text="0"
+            android:id="@+id/livestext"
+            android:textStyle="bold"
+            android:textColor="#ffc0f6ff"
+            android:textSize="22dp"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="LEVEL"
+            android:textStyle="bold"
+            android:textColor="#ffc0f6ff"
+            android:textSize="22dp"/>
+        <TextView
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="#ffc0f6ff"
+            android:textSize="22dp"
+            android:id="@+id/leveltext"/>
+    </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:id="@+id/topRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/middleRow">
+    <TableRow android:gravity="center">
+        <ImageView android:background="@drawable/empty_hole"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:id="@+id/row1location1"/>
+        <ImageView android:background="@drawable/empty_hole"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:id="@+id/row1location2"/>
+        <ImageView android:background="@drawable/empty_hole"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:id="@+id/row1location3"/>
+        <ImageView android:background="@drawable/empty_hole"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:id="@+id/row1location4"/>
+    </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:id="@+id/middleRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomRow">
+    <TableRow android:gravity="center">
+        <ImageView android:background="@drawable/empty_hole"
+            android:layout_width="70dp"
+            android:layout_height="110dp"
+            android:id="@+id/row2location1"/>
+        <ImageView android:background="@drawable/empty_hole"
+            android:layout_width="70dp"
+            android:layout_height="110dp"
+            android:id="@+id/row2location2"/>
+        <ImageView android:background="@drawable/empty_hole"
+            android:layout_width="70dp"
+            android:layout_height="110dp"
+            android:id="@+id/row2location3"/>
+        <ImageView android:background="@drawable/empty_hole"
+            android:layout_width="70dp"
+            android:layout_height="110dp"
+            android:id="@+id/row2location4"/>
+    </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomRow">
+    <TableRow android:gravity="center">
+        <ImageView android:background="@drawable/empty_hole"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:id="@+id/row3location1"/>
+        <ImageView android:background="@drawable/empty_hole"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:id="@+id/row3location2"/>
+        <ImageView android:background="@drawable/empty_hole"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:id="@+id/row3location3"/>
+        <ImageView android:background="@drawable/empty_hole"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:id="@+id/row3location4"/>
+    </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/gnomewhack_pointstext"
+        android:layout_above="@+id/topRow"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#ff8cdeff" />
+</RelativeLayout>

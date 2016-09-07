@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:background="@drawable/menu_bg"
+    android:layout_height="fill_parent"
+    android:gravity="bottom|center_horizontal"
+    android:paddingBottom="20dp"
+    android:id="@+id/layout_main_menu">
+
+    <Button
+        android:layout_width="192dp"
+        android:layout_height="90dp"
+        android:background="@drawable/btn_menu_events"
+        android:id="@+id/btn_games_gnomewhack"
+        android:onClick="EventsListClick"
+        />
+
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="75dp"
+        android:background="@drawable/btn_menu_competitions"
+        android:id="@+id/btn_games_seeddrop"
+        android:onClick="CompetitionsClick"
+        />
+
+    <Button
+        android:layout_width="164dp"
+        android:layout_height="67dp"
+        android:background="@drawable/btn_menu_games"
+        android:id="@+id/btn_comp_colourgnome"
+        android:onClick="GamesCompetitionsClick"
+        />
+
+    <Button
+        android:layout_width="166dp"
+        android:layout_height="63dp"
+        android:background="@drawable/btn_menu_map"
+        android:id="@+id/btn_comp_shakewin"
+        android:onClick="EventMapClick"
+        />
+
+    <Button
+        android:layout_width="164dp"
+        android:layout_height="77dp"
+        android:background="@drawable/btn_menu_contact_us"
+        android:id="@+id/button5"
+        android:onClick="ContactUsClick"
+        />
+</LinearLayout>

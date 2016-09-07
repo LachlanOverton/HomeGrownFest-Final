@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:paddingLeft="22dp"
+    android:paddingRight="22dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    tools:context="com.prototypes.stu.homegrown.activity_terms_conditions"
+    android:id="@+id/layout_terms_conditions"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Competition Entry"
+        android:id="@+id/tc_title"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="26dp"
+        android:textColor="#ffff9000" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tc_toprow">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="Terms and Conditions"/>
+        </ScrollView>
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tc_midrow"
+        android:layout_below="@+id/tc_toprow">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I have read the above Terms and Conditions"/>
+        </TableRow>
+        </TableLayout>
+        <TableLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tc_bottomrow"
+        android:layout_below="@id/tc_midrow">
+        <TableRow android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_height="30dp"
+                android:layout_width="150dp"
+                android:id="@+id/btn_tc_accept"
+                android:background="@drawable/btn_tc_accept"/>
+            <Button
+                android:layout_height="30dp"
+                android:layout_width="150dp"
+                android:id="@+id/btn_tc_decline"
+                android:background="@drawable/btn_tc_decline"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

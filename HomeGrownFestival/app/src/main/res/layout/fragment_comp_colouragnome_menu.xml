@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:paddingTop="10dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingBottom="12dp"
+    android:id="@+id/layout_colourgnome_menu">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Colour A Gnome"
+        android:id="@+id/textView"
+        android:layout_gravity="center"
+        android:textColor="#ffff9b33"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Select a gnome"
+        android:layout_gravity="center"
+        android:id="@+id/textView2" />
+<RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:background="@drawable/gnome_man_small"
+        android:id="@+id/btn_gnome_man"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:id="@+id/btn_gnome_boy"
+        android:background="@drawable/gnome_boy_small"
+        android:layout_below="@id/btn_gnome_man"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:id="@+id/btn_gnome_dog"
+        android:background="@drawable/gnome_dog_small"
+        android:layout_toRightOf="@id/btn_gnome_man"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:id="@+id/btn_gnome_lady"
+        android:background="@drawable/gnome_woman_small"
+        android:layout_toRightOf="@id/btn_gnome_man"
+        android:layout_below="@id/btn_gnome_man"/>
+</RelativeLayout>
+</LinearLayout>
